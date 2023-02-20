@@ -15,6 +15,8 @@ const images = [
   },
 ];
 
-const markup = images.map(img => `<li>${img}</li>`).join('');
+const markup = images
+  .map(img => `<li class="image" > <img src="${img.url}" alt="${img.alt}"> </li>`)
+  .join('');
 
 tab.insertAdjacentHTML('afterbegin', markup);
