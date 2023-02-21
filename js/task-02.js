@@ -11,6 +11,6 @@ for (let i = 0; i < ingredients.length; i++) {
   list[i] = document.createElement('li');
   list[i].textContent = ingredients[i];
   list[i].classList.add('item');
-  console.log(list);
+
   tab.append(list[i]);
 }
